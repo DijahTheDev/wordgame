@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+</head>
+  <body>
+  <div class="container">
+    <div class="row"> 
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        <img src="./assets/strangerHangmanTitle.png" alt="Stranger Hangman" class="center-block img-responsive" id="title">
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        <div class="text-center" id="gameInstructions">
+          <p>Press any key to get started!</p>
+        </div>
+        <div class="text-center">
+          <p>Try to guess the current word. Do it before the all your friends are sent to the Upside Down!</p>
+        </div>
+      </div> 
+    </div>
+    <div class="row" id="gameContainer"> 
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn">
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="elevenImg">
+            <img src="./assets/eleven.png" alt="Eleven" class="center-block img-responsive" ><p class="text-center names">ELEVEN</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="mikeImg">
+            <img src="./assets/mike.png" alt="Mike" class="center-block img-responsive"><p class="text-center names">MIKE</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="willImg">
+            <img src="./assets/will.png" alt="Will" class="center-block img-responsive"><p class="text-center names">WILL</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="dustinImg">
+            <img src="./assets/dusty.png" alt="Dusty" class="center-block img-responsive"><p class="text-center names">DUSTIN</p>
+          </div>
+        </div>	
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-6">
+            <img src="./assets/lucas.png" alt="Lucas" class="center-block img-responsive" id="lucasImg"><p class="text-center names">LUCAS</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6">
+            <img src="./assets/madMax.png" alt="Mad Max" class="center-block img-responsive" id="madMaxImg"><p class="text-center names">MAD MAX</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6">
+            <img src="./assets/steve.png" alt="Steve" class="center-block img-responsive" id="steveImg"><p class="text-center names">STEVE</p>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-6">
+            <img src="./assets/chiefHopper.png" alt="Chief Hopper" class="center-block img-responsive" id="chiefHopperImg"><p class="text-center names">CHIEF HOPPER</p>
+          </div>
+        </div>			
+      </div> 
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn"> 
+        <div class="row"> 
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord"> 
+              <div>
+                <h3>CURRENT WORD</h3>
+              </div>
+              <div >
+                <h2 id="theWord">   </h2>
+              </div>
+          </div> 
+        </div> 
+        <div class="row"> 
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+              <div class="row" id="winLose">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+                  <div >
+                    <h4 id="wins">Wins:  </h4>
+                  </div>
+                </div> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+                  <div >
+                    <h4 id="losses">Losses:  </h4>
+                  </div>
+                </div>							
+              </div> 
+              <div>
+                <h4 class="text-center" id="remGuesses">Number of Guesses Remaining:  </h4>
+              </div>
+              <div>
+                <h4 id="guessedLetters">Letters Already Guessed:</h4>
+              </div>
+          </div> 
+        </div> 
+      </div> 			
+    <div class="row">
+      <div class="col-xs-12">	
+        <div class="text-center">
+          <video width="240" height="240" id="song">
+            <source src="./assets/win.mov" type="video/mp4" autoplay>
+            <source src="./assets/booboo.mov" type="video/mp4" autoplay>
+          </video>
+            
+        </div>
+      </div>
+    </div>			
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>
