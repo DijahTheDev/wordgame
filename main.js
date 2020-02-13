@@ -117,6 +117,7 @@ function roundComplete() {
     console.log("YOU WIN!")
 
     document.getElementById("wins").innerHTML = "Wins: " + " " + wins
+    document.getElementById("winVideo").play()
 
     newGame()
     document.getElementById("guessedLetters").innerHTML =
@@ -131,6 +132,7 @@ function roundComplete() {
     console.log("You Lost!")
 
     document.getElementById("losses").innerHTML = "Losses: " + " " + losses
+    document.getElementById("loseVideo").play()
 
     newGame()
     document.getElementById("guessedLetters").innerHTML =
